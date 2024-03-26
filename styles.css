@@ -1,0 +1,232 @@
+#nav {
+    width: 100%;
+    height: 100px;
+    /* border for the nav bar */
+    border-bottom: 5px solid black;
+    /* to make the nav bar be read from left to right */
+    display: flex;
+    flex-direction: row;
+    /* making the children in the navbar aligned to the center */
+    /* splits the children from the left and the right along the y-axis*/
+     justify-content: space-between; 
+    /* centers the children along the x-axis */
+    align-items: center;
+    background-color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#home {
+    white-space: nowrap;
+    /* size of font */
+    font-size: large;
+    /* how bold the font is */
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+}
+
+#home:hover {
+   text-decoration: underline;
+}
+
+#rightNav {
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+
+#AboutMe {
+    font-size: large;
+    font-weight: 600;
+}
+
+#AboutMe:hover {
+    text-decoration: underline;
+}
+
+#ContactMe {
+    font-size: large;
+    font-weight: 600;
+}
+
+#ContactMe:hover {
+    text-decoration: underline;
+}
+
+#linkedIn {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body {
+    /* font size for the whole body of the website */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+    /* make it so that there isnt an invisible border around the website */
+    margin: 0px;
+    position: relative;
+    background-color: rgb(35, 75, 162);
+}
+
+#homeBG {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 425px) {
+    #homeText {
+        font-size: 2rem !important;
+    }
+
+    #home {
+        padding-left: 10px;
+    }
+
+    #AboutMe {
+        display: none;
+    }
+
+    #ContactMe {
+        display: none;
+    }
+
+    #rightNav {
+        gap: 0;
+        padding-right: 10px;
+    }
+
+    #nav {
+        padding-left: 0px;
+    }
+
+   .aboutMe {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: none !important;
+        margin: none !important;
+        justify-content: center !important;
+        align-items: center !important;
+   }
+
+   .text {
+        width: 80% !important;
+        font-size: small !important;
+        padding: none !important;
+        margin: none !important;
+   }
+
+   #aboutBG {
+    height: 100% !important;
+   }
+   
+}
+
+@media screen and (max-width: 768px) {
+    #aboutBG {
+        height: 100% !important;
+       }
+}
+
+#selfie {
+    border-radius: 200px;
+    border: solid white;
+    margin-bottom: -200;
+    
+}
+
+
+#homeText {
+    height: 0px;
+    padding: 0;
+    color: white;
+    z-index: 10;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.linkButtons {
+    display: flex;
+    gap: 40px;
+}
+
+#aboutBG {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+#con {
+    color: white;
+    background: transparent;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    border-color: white;
+    padding: 10px 20px;
+}
+
+#con:hover {
+    opacity: 80%;
+}
+
+#aM {
+    color: white;
+    background: transparent;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    border-color: white;
+    padding: 10px 20px;
+    
+}
+
+#aM:hover {
+    opacity: 80%;
+}
+
+.aboutMe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 0px 100px;
+}
+
+.text {
+    z-index: -1;
+    color: white;
+    font-size: larger;
+    width: 50%;
+}
+
+#image {
+    z-index: -1;
+}
+
