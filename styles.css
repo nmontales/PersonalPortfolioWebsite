@@ -96,7 +96,7 @@ body {
     padding-top: 100px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1284px) {
     #homeText {
         font-size: 2rem !important;
     }
@@ -144,11 +144,7 @@ body {
    
 }
 
-@media screen and (max-width: 768px) {
-    #aboutBG {
-        height: 100% !important;
-       }
-}
+
 
 #selfie {
     border-radius: 200px;
